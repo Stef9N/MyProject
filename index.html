@@ -1,86 +1,95 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
-    <meta charset="UTF-8">
-    <title>Stefan Resume</title>
+  <meta charset="UTF-8">
+  <title>Stefan Resume</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <table>
-        <tr>
-            <td>
-                <img src="Foto1.JPG" alt="My Foto" width="150">
-            </td>
-            <td>
-                <h1>Stefan Chernyshev</h1>
-    <p><em>Я работаю старшим бариста в <strong>Esentai Gourmet</strong></em></p>
-    <p>Я люблю смотреть фильмы, сериалы, а так же жить с кайфом ЕХАА</p>
-            </td>
-        </tr>
-    </table>
+  <div class="container">
     
-    <hr size="2" noshade color="blue">
-    <h2>Мои социальные сети</h2>
-    <ul type="square">
-        <li><a href="https://vk.com/instllch" target="_blank">Vk</a></li>
-        <li><a href="https://www.instagram.com/stefan.chernyshev/" target="_blanc">Instagram</a></li>
-    </ul>
+    <div class="info">
+      <img src="Foto1.JPG" alt="My Foto" class="avatar">
+      
+      <div class="info-text">
+        <h1>Stefan Chernyshev</h1>
+        <p>Я работаю старшим бариста в <strong>Esentai Gourmet</strong></p>
+        <p>Я люблю смотреть фильмы, сериалы, а так же жить с кайфом ЕХАА</p>
 
-    <hr size="2" noshade color="blue">
+        <h4>Мои социальные сети</h4>
+        <a href="https://vk.com/instllch" target="_blank">Vk</a> |
+        <a href="https://www.instagram.com/stefan.chernyshev/" target="_blank">Instagram</a>
+      </div> <!-- /.info-text -->
 
-    <h2>Мои Хобби</h2>
-    <ol type="I">
-        <li>Профassиanalno рисую сердечки на кофе</li>
-        <li>Спорт: Спортивная ходьба за пивом</li>
+    </div> <!-- /.info -->
+
+    <div class="card bg-yellow">
+      <h2>Мои Хобби</h2>
+      <ol class="list">
+        <li>Профессионально рисую сердечки на кофе</li>
+        <li>Спортивная ходьба за пивом</li>
         <li>Прогулки в горы</li>
-        <li>Интересуюсь политикой, пока политика не заинтересовалось мною</li>
-    </ol>
+        <li>Интересуюсь политикой, пока политика не заинтересовалась мною</li>
+      </ol>
+    </div>
 
-    <hr size="2" noshade color="blue">
-
-    <h2>Опыт работы</h2>
-    <table border="2">
+    <div class="card bg-green">
+      <h2>Опыт работы</h2>
+      <table class="table">
         <tr>
-           <th>Компания</th> 
-           <th>Должность</th>
-           <th>Год</th>
+          <td>Leroy Merlin</td>
+          <td>Продавец-консультант</td>
+          <td>2021–2022</td>
         </tr>
         <tr>
-            <td>Leroy Merlin</td>
-            <td>Продавец-Консультант</td>
-            <td>2021-2022</td>
+          <td>ТРАЛАЛЕЛА-ТРАЛАЛА</td>
+          <td>Голубиро Шпиониро</td>
+          <td>2022–2023</td>
         </tr>
         <tr>
-            <td>Esentai Gourmet</td>
-            <td>Старший бариста</td>
-            <td>2022-по настоящее время</td>
+          <td>Esentai Gourmet</td>
+          <td>Старший бариста</td>
+          <td>2022 – по настоящее время</td>
         </tr>
-       
-    </table>
+        <tr>
+          <td>Сосиджес Технолоджис</td>
+          <td>Фючюрес сосиджерс траспологиес</td>
+          <td>2024 – по настоящее время</td>
+        </tr>
+      </table>
+    </div>
 
-    <hr size="2" noshade color="blue">
+    <div class="contact">
+      <h2>Связь со мной</h2>
 
-    <h2>Связь со мной</h2>
+      <form action="/">
+        <div class="row">
+          <div class="form-group">
+            <label for="name">Ваше имя</label>
+            <input type="text" id="name" placeholder="Введите имя">
+          </div>
 
-    <form action="/">
-        <label for="name">Ваше имя</label>
-        <input type="text" id="name" placeholder="Вводите имя">
+          <div class="form-group">
+            <label for="email">Ваш email</label>
+            <input type="email" id="email" placeholder="Введите email">
+          </div>
+        </div>
 
-        <br>
+        <div class="form-group">
+          <label for="text">Ваше сообщение</label><br>
+          <textarea id="text" rows="4" cols="30" placeholder="Введите сообщение..."></textarea>
+        </div>
 
-        <label for="email">Ваш email</label>
-        <input type="text" id="email" placeholder="Вводите email">
+        <input class="btn" type="submit" value="Связаться">
+      </form>
+    </div>
 
-        <br>
+    <div class="position">
+        <div class="box"></div>
+    </div>
 
-        <label for="text">Ваше сообщение</label>
-        <br>
-        <textarea id="text" rows="4" cols="10"></textarea>
-        
+  </div> <!-- /.container -->
 
-        <input type="submit" value="Связаться">
-
-    </form>
-
-    
+  <div style="margin-bottom: 500px;"></div>
 </body>
 </html>
